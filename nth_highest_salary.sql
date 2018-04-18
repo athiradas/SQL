@@ -8,3 +8,11 @@ BEGIN
      WHERE Rank = N LIMIT 1
   );
 END
+
+
+
+
+SELECT MIN(Score) FROM 
+(SELECT TOP 3 Score FROM Scores ORDER BY Score DESC) T
+
+
